@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    /* font-family: sans-serif; */
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+section
+{
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../cv/image/bg.jpg);
+    background-position: right;
+    background-size: cover;
+    z-index: 1;
+    cursor: default;
+}
+.banner h2
+{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #111;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+.banner h3
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111;
+
+}
+.btn
+{
+    position: relative;
+    background: #2196f3;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+.btn:hover
+{
+    background:#111;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1000;
+    display: flex;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .logo
+{
+    color:#fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header ul
+{
+    display: flex;
+    position: relative;   
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+header.sticky ul li a
+{
+    color: #111;
+}
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#111;
+}
+.heading h2{
+    font-weight:600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentbx
+{
+    padding-right: 30px;
+    justify-content: center;
+}
+.contentbx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w05
+{
+    min-width: 50%;
+}
+/* .w05 .img1
+{
+border: 5px #2196f3 solid;
+} */
+img{
+    box-sizing: border-box;
+    max-width: 50%;
+}
+.services
+{
+    background: #111;
+}
+.heading.white{
+    color: #fff;
+}
+.services.content
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesBx
+{
+    justify-content: center;
+    padding: 30px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.services .content .servicesBx:hover
+{
+    background-color: #2196f3;
+}
+.services .content .servicesBx img
+{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content .servicesBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.work .content
+{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.work.content.workBx
+{
+    width: 50%;
+    padding: 20px;
+    justify-content:center;
+    align-items: center;
+    max-width: fit-content;
+}
+ .work .content .workBx img
+{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+} 
+.testomonial
+{
+    background: #f7f7f7;
+}
+.testomonial .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testomonial .content .tesstomonialBx
+{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+.testomonial .content .tesstomonialBx p{
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+.testomonial .content .tesstomonialBx h3
+{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+.testomonial .content .tesstomonialBx h3 span
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact
+{
+    background: #111;
+}
+.formbx
+{
+    min-width: 60%;
+}
+.formbx form
+{
+    display: flex;
+    flex-direction: column;
+}
+.formbx form h3,
+.contactinfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.formbx form input,
+.formbx form textarea  
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #222;
+}
+.formbx form textarea 
+{
+    min-height: 200px;
+}
+.formbx form input::placeholder
+.formbx form textarea ::placeholder{
+    color: #999;
+}
+.formbx form input[type="submit"]
+{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.contactinfo
+{
+    min-width: 40%;
+}
+.contactInfoBx .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+/* .contactInfoBx .box icon "baki chhh"
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+} */
+.contactInfoBx .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+   
+}
+.contactInfoBx .box .text h3
+{
+    font-weight:500;
+    color: #2196f3;
+    margin: 0;
+} 
+.copyright
+{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* Responsive */
+@media (max-width:991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #f7f7f7;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2s);
+    }
+    .menu.active
+    {
+        left: 0;
+    }
+    header ul li a{
+        color: #fff;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(../cv/image/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active
+    {
+        background: url(../cv/image/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer; 
+    }
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner
+    {
+        padding: 150px 50px 100px;
+    }
+    .banner h2
+    {
+        font-size: 1.5em;
+    }
+    .banner h3
+    {
+        font-size: 1em;
+    }
+    .btn
+    {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2
+    {
+        font-size: 24px;
+    }
+    .contentbx
+    {
+        font-size: 20px;
+    }
+    .content
+    {
+        flex-direction: column;
+        
+    }
+    .w05
+    {
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx
+    {
+        max-width: fit-content;
+        margin: 20px;
+    }
+    .work .content .workBx
+    {
+        max-width: fit-content;
+        margin: 20px;
+    }
+    .testomonial .content .tesstomonialBx
+    {
+        max-width:fit-content;
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .testomonial .content .tesstomonialBx h3 
+    {
+        margin-top: 20px;
+    }
+    .contactinfo
+    {
+        min-width: 40%;
+        margin: 20px 0;
+    }
+}
+
